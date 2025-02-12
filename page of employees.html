@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url(https://i.pinimg.com/originals/7a/d1/7d/7ad17d4a5b0dedaaabb5c3903b53dd62.jpg);
+        background-size: cover;
+        font-family: "Poppins", sans-serif;
+      }
+      .employee_page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 100%;
+        padding: 10% 5%;
+      }
+      .card_o {
+        width: 300px !important;
+        padding: 40px 20px;
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        border-radius: 15px;
+        background: transparent;
+        backdrop-filter: blur(20px) !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+      }
+      .card_o:hover {
+        transform: scale(1.05);
+      }
+      .igf {
+        position: absolute;
+        top: -60px;
+        width: 100px;
+        border-radius: 50%;
+      }
+      @media (max-width: 768px) {
+        .employee_page {
+          padding: 5% 2%;
+          gap: 100px;
+        }
+        .card_o {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="employee_page">
+      <div class="card_o chairman">
+        <a href="https://www.linkedin.com/in/softwarearenaltd/">
+          <img src="Sir.jpeg" class="igf" alt="Iqbal Hossainn Talukder" />
+        </a>
+        <div class="text">
+          <h3>Iqbal Hossainn Talukder</h3>
+          <small>Chairman of Software Arena Ltd</small>
+        </div>
+    </div>
+    <div class="card_o chairman">
+        <a href="https://www.linkedin.com/in/eakterhossain/" target="_blank">
+            <img src="AkterHossain.jpeg" class="igf">
+        </a>
+        <div class="text">
+            <h3>Akter Hossain</h3>
+            <small>Fullstack Software Engineer</small>
+        </div>
+    </div>
+    <div class="card_o chairman">
+        <a href="https://www.linkedin.com/in/nizam-uddin-tuhin" target="_blank">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQHdVNkmoY9s2A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1696688726396?e=2147483647&v=beta&t=bx6xcbYPsuOpl9wWqjrCpY0zyxLNZwJ4vPz8ymlFzoA" class="igf" alt="Nizam Uddin Tuhin">
+        </a>
+        <div class="text">
+            <h3>Md Nizam Uddin Tuhin</h3>
+            <small>Fullstack Software Engineer</small>
+        </div>
+    </div>
+    <div class="card_o chairman">
+        <img src="ffsdfsfsdfsd.jpg" class="igf" alt="Iqbal Hossainn Talukder" />
+      </a>
+      <div class="text">
+        <h3>Sumon Roy</h3>
+        <small>Jr. Software  Engineer</small>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
